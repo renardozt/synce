@@ -114,7 +114,7 @@ export default class Navbar extends Component {
                     <div className="col-4 text-right justify-content-center">
                         <div className="navbar-end">
                             <div className="dropdown-area">
-                                <Button onClick={() => this.dropdownHandler('lang')} className='lang' variant="text" size="large" color="inherit">
+                                <Button data-placeholder={lang.language} onClick={() => this.dropdownHandler('lang')} className='lang ph' variant="text" size="large" color="inherit">
                                     <img src={`/img/lang/${lang.code}.png`} alt="" />
                                     <span>{lang.code}</span>
                                     <i class="fa-solid fa-angle-down"></i>
@@ -138,7 +138,7 @@ export default class Navbar extends Component {
                             </div>
 
                             <div className="dropdown-area">
-                                <IconButton onClick={() => this.dropdownHandler('theme')} className='theme' variant="outlined">
+                                <IconButton data-placeholder={lang.theme} onClick={() => this.dropdownHandler('theme')} className='theme ph' variant="outlined">
                                     <i className={config.navbar.themes.find(theme => theme.value == (localStorage.getItem('theme') || 'osdefault')).icon}></i>
                                 </IconButton>
 
@@ -159,7 +159,7 @@ export default class Navbar extends Component {
                                 </ul>}
                             </div>
 
-                            <IconButton className='support' variant="outlined">
+                            <IconButton data-placeholder={lang.support} className='support ph' variant="outlined">
                                 <a href={config.navbar.support} target="_blank">
                                     <i class="fa-brands fa-discord"></i>
                                 </a>

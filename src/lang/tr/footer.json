@@ -1,1 +1,22 @@
-{}
+{
+    "social": {
+        "title": "TAKİPTE KALIN..."
+    },
+    "quickLinks": {
+        "title": "HIZLI BAĞLANTILAR",
+        "pages": [
+            "Ana Sayfa",
+            "Komutlar"
+        ]
+    },
+    "developers": {
+        "title": "GELİŞTİRİCİLER"
+    },
+    "legal": {
+        "title": "YASAL",
+        "copyright": {
+            "title": "{replace} Telif Hakları.",
+            "desc": "Tüm Hakları Saklıdır."
+        }
+    }
+}

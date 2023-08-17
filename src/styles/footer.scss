@@ -1,0 +1,120 @@
+footer {
+    margin-top: 250px;
+    background-color: rgb(var(--theme-card));
+    padding: 75px;
+
+    .container-fluid {
+        .row {
+            .area {
+                h1 {
+                    font-weight: 700;
+                    font-size: 15px;
+                    color: #38b6ff;
+                    text-transform: uppercase;
+                }
+
+                &.social {
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            display: inline-block;
+
+                            button {
+                                height: 40px;
+                                width: 40px;
+
+                                a {
+                                    display: block;
+                                    height: 40px;
+                                    width: 40px;
+                                    color: rgb(var(--theme-text));
+
+                                    i {
+                                        font-size: 20px;
+                                        line-height: 40px;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.pages {
+                    ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            a {
+                                text-decoration: none;
+                                color: rgb(var(--theme-text));
+                                transition: all .2s ease-in-out;
+
+                                &:hover {
+                                    color: rgb(var(--theme-hover));
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.legal {
+
+                    button {
+                        height: 50px;
+                        width: 50px;
+                        vertical-align: top;
+                        color: #38b6ff;
+
+                        a {
+                            display: block;
+                            height: 50px;
+                            width: 50px;
+                            color: #38b6ff;
+
+                            img {
+                                height: 50px;
+                                width: 50px;
+                            }
+                        }
+                    }
+
+                    .copyright {
+                        display: inline-block;
+
+                        p {
+                            font-size: 15px;
+                            margin: 0;
+                            line-height: 25px;
+
+                            span {
+                                color: #38b6ff;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 1199px) {
+                        img {
+                            display: block;
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+
+                        .copyright {
+                            display: block;
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+}

@@ -1,1 +1,22 @@
-{}
+{
+    "social": {
+        "title": "STAY IN TOUCH..."
+    },
+    "quickLinks": {
+        "title": "QUICK LINKS",
+        "pages": [
+            "Home",
+            "Commands"
+        ]
+    },
+    "developers": {
+        "title": "DEVELOPERS"
+    },
+    "legal": {
+        "title": "LEGAL",
+        "copyright": {
+            "title": "Copyright {replace}.",
+            "desc": "All Rights Reserved."
+        }
+    }
+}

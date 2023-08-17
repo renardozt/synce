@@ -15,7 +15,10 @@
     },
     "navbar": {
         "logo": "/logo.png",
-        "brand": ["Synce", "Bot"],
+        "brand": [
+            "Synce",
+            "Bot"
+        ],
         "pages": [
             "/",
             "/commands"
@@ -46,5 +49,31 @@
         ],
         "support": "https://discord.gg/GqkXqUvyaD",
         "invite": ""
+    },
+    "footer": {
+        "socials": [
+            {
+                "icon": "",
+                "link": ""
+            }
+        ],
+        "quickLinks": [
+            "/",
+            "/commands"
+        ],
+        "developers": [
+            {
+                "name": "Tyial (Furkan)",
+                "link": "https://discord.com/users/852868839691517972"
+            },
+            {
+                "name": "Many (Ataberk)",
+                "link": "https://discord.com/users/996413007116640327"
+            }
+        ],
+        "legal": {
+            "logo": "/logo.png",
+            "brand": "Synce Bot"
+        }
     }
 }

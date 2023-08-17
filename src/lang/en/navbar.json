@@ -10,5 +10,8 @@
         "Light",
         "Dark"
     ],
+    "language": "Languages",
+    "theme": "Themes",
+    "support": "Support Server",
     "invite": "Invite"
 }
