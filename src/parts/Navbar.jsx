@@ -5,6 +5,7 @@ import IconButton from '@mui/material/IconButton'
 import Icon from '@mui/material/Icon'
 import Button from '@mui/material/Button';
 import $ from 'jquery';
+import config from '../config.json';
 
 export default class Navbar extends Component {
 
@@ -13,7 +14,8 @@ export default class Navbar extends Component {
 
         this.state = {
             scrollTop: 0,
-            slide: 0
+            slide: 0,
+            dropdown: null
         }
     }
 
@@ -23,8 +25,8 @@ export default class Navbar extends Component {
     }
 
     sliderHandler() {
-        !!this.state.options && this.setState({
-            options: null
+        !!this.state.dropdown && this.setState({
+            dropdown: null
         })
         const navbar = $('.navbar');
         const scrollTop = $(window).scrollTop();
@@ -70,53 +72,106 @@ export default class Navbar extends Component {
         }
     }
 
+    dropdownHandler(section) {
+        this.setState({
+            dropdown: section == this.state.dropdown ? null : section
+        })
+    }
+
     render() {
+
+        const lang = this.props.lang;
+
         return (
             <div className="navbar transparent">
+                <title>{config.navbar.brand.join(' ')} | {lang.slogan}</title>
                 <div className="container-fluid justify-content-between">
                     <div className="col-4 text-left justify-content-center">
                         <div className="navbar-brand">
                             <Link to="">
                                 <IconButton>
-                                    <img src="../img/logo.png" alt="" className='logo' />
+                                    <img src={`/img/${config.navbar.logo}`} alt="" className='logo' />
                                 </IconButton>
                             </Link>
-                            <h1 className="title"><span>Synce</span> Bot</h1>
+                            <h1 className="title"><span>{config.navbar.brand[0]}</span> {config.navbar.brand[1]}</h1>
                         </div>
                     </div>
                     <div className="col-4 text-center justify-content-center">
                         <div className="navbar-pages">
                             <ul className='pages'>
-                                <li>
-                                    <NavLink to="">
-                                        <Button>Home</Button>
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/commands">
-                                        <Button>Commands</Button>
-                                    </NavLink>
-                                </li>
+                                {config.navbar.pages.map((page, index) => {
+                                    return (
+                                        <li>
+                                            <NavLink to={page}>
+                                                <Button>{lang.pages[index]}</Button>
+                                            </NavLink>
+                                        </li>
+                                    )
+                                })}
                             </ul>
                         </div>
                     </div>
                     <div className="col-4 text-right justify-content-center">
                         <div className="navbar-end">
-                            <IconButton variant="outlined" size="large">
-                                <i class="fa-solid fa-gear"></i>
-                            </IconButton>
-                            <a href="https://discord.gg/GqkXqUvyaD" target="_blank">
-                                <IconButton variant="outlined" size="large">
-                                    <i class="fa-brands fa-discord"></i>
+                            <div className="dropdown-area">
+                                <Button onClick={() => this.dropdownHandler('lang')} className='lang' variant="text" size="large" color="inherit">
+                                    <img src={`/img/lang/${lang.code}.png`} alt="" />
+                                    <span>{lang.code}</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </Button>
+
+                                {this.state.dropdown == 'lang' && <ul className="dropdown">
+                                    {config.navbar.languages.map((lang, index) => {
+                                        return (
+                                            <li data-lang={lang.code}>
+                                                <Button fullWidth={true}
+                                                    style={{ justifyContent: "flex-start" }}
+                                                    size="small"
+                                                    color="inherit">
+                                                    <img src={`/img/lang/${lang.code}.png`} alt="" />
+                                                    <span>{lang.name}</span>
+                                                </Button>
+                                            </li>
+                                        )
+                                    })}
+                                </ul>}
+                            </div>
+
+                            <div className="dropdown-area">
+                                <IconButton onClick={() => this.dropdownHandler('theme')} className='theme' variant="outlined">
+                                    <i className={config.navbar.themes.find(theme => theme.value == (localStorage.getItem('theme') || 'osdefault')).icon}></i>
                                 </IconButton>
-                            </a>
-                            <a target="_blank" className='invite'>
-                                <Button className='login' variant="outlined" color="inherit">Invite</Button>
-                            </a>
+
+                                {this.state.dropdown == 'theme' && <ul className="dropdown">
+                                    {config.navbar.themes.map((theme, index) => {
+                                        return (
+                                            <li data-theme={theme.value}>
+                                                <Button fullWidth={true}
+                                                    style={{ justifyContent: "flex-start" }}
+                                                    size="small"
+                                                    color="inherit">
+                                                    <i className={theme.icon}></i>
+                                                    <span>{lang.themes[index]}</span>
+                                                </Button>
+                                            </li>
+                                        )
+                                    })}
+                                </ul>}
+                            </div>
+
+                            <IconButton className='support' variant="outlined">
+                                <a href={config.navbar.support} target="_blank">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                            </IconButton>
+
+                            <Button className='invite' variant="outlined" color="inherit">
+                                <a href={config.navbar.invite} target="_blank">{lang.invite}</a>
+                            </Button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         )
     }
 }

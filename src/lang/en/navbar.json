@@ -1,1 +1,14 @@
-{}
+{
+    "code": "en",
+    "slogan": "Make your server amazing.",
+    "pages": [
+        "Home",
+        "Commands"
+    ],
+    "themes": [
+        "OS Default",
+        "Light",
+        "Dark"
+    ],
+    "invite": "Invite"
+}

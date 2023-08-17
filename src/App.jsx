@@ -25,8 +25,8 @@ export default class App extends Component {
 
   componentDidMount() {
     this.setTheme();
-    //this.themeHandler();
-    //this.langHandler();
+    this.themeHandler();
+    this.langHandler();
     //this.loaderHandler();
   }
 
@@ -39,10 +39,12 @@ export default class App extends Component {
     }, 5e2)
   }*/
 
-  /*langHandler() {
+  langHandler() {
     $('html').attr('lang', localStorage.getItem('lang') || navigator.language.slice(0, 2) || 'en');
-    $(document).on('click', '.navbar .options li[data-option="languages"] ul.sub-menu li', (el) => {
+
+    $(document).on('click', '.navbar .navbar-end .dropdown li', (el) => {
       const language = $(el.currentTarget).attr('data-lang');
+      if (!language) return;
 
       $('html').attr('lang', language);
       localStorage.setItem('lang', language);
@@ -50,12 +52,13 @@ export default class App extends Component {
         lang: lang[language] || lang.en
       });
     });
-  }*/
+  }
 
-  /*themeHandler() {
-    $(document).on('click', '.navbar .options li[data-option="themes"] ul.sub-menu li', (el) => {
+  themeHandler() {
+    $(document).on('click', '.navbar .navbar-end .dropdown li', (el) => {
       const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
       const theme = $(el.currentTarget).attr('data-theme');
+      if (!theme) return;
 
       let selection = theme;
 
@@ -64,21 +67,11 @@ export default class App extends Component {
 
       if (!selection) return;
 
-      if (selection == localStorage.getItem('theme') || (localStorage.getItem('theme') == 'osdefault' && selection == (darkThemeMq.matches ? 'dark' : 'light'))) {
-        localStorage.setItem('theme', theme);
-        this.setState({ theme });
-        return;
-      }
-
-      $('.theme-change').css('display', 'block');
-      $(`.theme-change .${selection}`).addClass('selected');
       localStorage.setItem('theme', theme);
-      setTimeout(() => this.setTheme(), 100);
-      setTimeout(() => $('.theme-change').fadeOut(600, () => {
-        $(`.theme-change .${selection}`).removeClass('selected')
-      }), 2000)
+      this.setState({ theme });
+      this.setTheme();
     });
-  }*/
+  }
 
   setTheme() {
     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
@@ -105,8 +98,8 @@ export default class App extends Component {
       <Router>
         <Navbar lang={this.state.lang.navbar} />
         <Routes>
-          <Route path="/" element={<Home lang={this.state.lang.home} />} />
-          <Route path="/commands" element={<Commands lang={this.state.lang.commands} />} />
+          <Route path={`/`} element={<Home lang={this.state.lang.home} />} />
+          <Route path={`/commands`} element={<Commands lang={this.state.lang.commands} />} />
         </Routes>
       </Router>
     )

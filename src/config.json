@@ -8,10 +8,43 @@
         },
         "dark": {
             "bg": "17, 17, 17",
-            "card": "21, 21, 21",
+            "card": "22, 22, 22",
             "text": "255, 255, 255",
             "hover": "204, 204, 204"
         }
+    },
+    "navbar": {
+        "logo": "/logo.png",
+        "brand": ["Synce", "Bot"],
+        "pages": [
+            "/",
+            "/commands"
+        ],
+        "languages": [
+            {
+                "code": "en",
+                "name": "English"
+            },
+            {
+                "code": "tr",
+                "name": "Türkçe"
+            }
+        ],
+        "themes": [
+            {
+                "value": "osdefault",
+                "icon": "fa-solid fa-circle-half-stroke"
+            },
+            {
+                "value": "light",
+                "icon": "fa-solid fa-sun"
+            },
+            {
+                "value": "dark",
+                "icon": "fa-solid fa-moon"
+            }
+        ],
+        "support": "https://discord.gg/GqkXqUvyaD",
+        "invite": ""
     }
-    
 }

@@ -1,1 +1,14 @@
-{}
+{
+    "code": "tr",
+    "slogan": "Sunucunuzu mükemmelleştirin.",
+    "pages": [
+        "Ana Sayfa",
+        "Komutlar"
+    ],
+    "themes": [
+        "İS Varsayılanı",
+        "Aydınlık",
+        "Karanlık"
+    ],
+    "invite": "Ekle"
+}
