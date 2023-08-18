@@ -1,1 +1,25 @@
-{}
+{
+    "welcome": {
+        "slogan": "Hayalinizdeki Bot",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maiores eum aperiam libero voluptatem a natus hic fugit illo debitis?",
+        "invite": "SUNUCUYA EKLE!",
+        "support": "DESTEK SUNUCUMUZA KATIL!"
+    },
+    "features": {
+        "title": "Özellikler",
+        "cards": [
+            {
+                "title": "Kolay Kullanım",
+                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+            },
+            {
+                "title": "7/24 Aktif Hizmet",
+                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+            },
+            {
+                "title": "Canlı Destek",
+                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+            }
+        ]
+    }
+}

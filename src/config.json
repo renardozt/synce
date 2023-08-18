@@ -75,5 +75,26 @@
             "logo": "/logo.png",
             "brand": "Synce Bot"
         }
+    },
+    "home": {
+        "welcome": {
+            "brand": ["Synce", "Bot"],
+            "slogan": {
+                "enable": true,
+                "brace": "|"
+            },
+            "buttons": {
+                "invite": "",
+                "support": "https://discord.gg/GqkXqUvyaD"
+            },
+            "logo": "/laptop.png"
+        },
+        "features": {
+            "cards": [
+                "fa-solid fa-clock",
+                "fa-solid fa-circle-check",
+                "fa-solid fa-comments"
+            ]
+        }
     }
 }

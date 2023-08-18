@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import config from '../../config.json';
 import VisibilitySensor from 'react-visibility-sensor';
 
-export default class Features extends Component {
+export default class Stats extends Component {
     render() {
 
         const lang = this.props.lang;
@@ -14,7 +14,7 @@ export default class Features extends Component {
                     <div className="row">
                         {config.home.features.cards.map((card, index) => {
                             return (
-                                <Feature icon={card} title={lang.cards[index].title} desc={lang.cards[index].desc} />
+                                <Stat icon={card} title={lang.cards[index].title} desc={lang.cards[index].desc} />
                             )
                         })}
                     </div>
@@ -24,12 +24,12 @@ export default class Features extends Component {
     }
 }
 
-const Feature = class Feature extends Component {
+const Stat = class Stat extends Component {
 
     static defaultProps = {
         icon: "fa-solid fa-x",
+        count: 0,
         title: "ERROR: SET A TITLE!",
-        desc: "ERROR: SET A DESCRIPTION!"
     }
 
     render() {

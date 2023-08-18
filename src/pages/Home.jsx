@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import '../styles/home.scss';
 import {
-    Welcome
+    Welcome,
+    Features,
+    Stats
 } from '../parts/Home'
 
 export default class Home extends Component {
     render () {
+
+        const lang = this.props.lang;
         return (
             <div className="home">
-                <Welcome />
+                <Welcome lang={lang.welcome} />
+                <Features lang={lang.features} />
+                <Stats lang={lang.stats} />
             </div>
         )
     }

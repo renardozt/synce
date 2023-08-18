@@ -18,9 +18,12 @@
                 display: flex;
                 column-gap: 1.5rem;
 
-                button {
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                    display: inline;
 
-                    &.invite {
+                    &.invite button {
                         color: #000;
                         background-color: #38b6ffa1;
 
@@ -29,7 +32,7 @@
                         }
                     }
 
-                    &.support {
+                    &.support button {
                         color: #000;
                     }
                 }
@@ -38,6 +41,103 @@
 
         img {
             height: 250px;
+        }
+    }
+
+    #features {
+        padding: 50px;
+        background-color: #38b6ffa1;
+        backdrop-filter: blur(10px);
+
+        .container {
+            h1 {
+                font-weight: 700;
+            }
+
+            .row {
+
+                .card {
+                    color: rgb(var(--theme-text));
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    padding: 0 15px;
+
+                    &.active {
+                        p {
+                            animation: feature-desc-fadein 1s ease-in-out forwards;
+
+                            @keyframes feature-desc-fadein {
+                                50% {
+                                    opacity: 1;
+                                }
+
+                                100% {
+                                    opacity: .7;
+                                }
+                            }
+                        }
+
+                        &:nth-child(1) i {
+                            animation: feature-first 1s ease-in-out forwards;
+
+                            @keyframes feature-first {
+                                to {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) i {
+                            animation: feature-second 1s ease-in-out forwards;
+
+                            @keyframes feature-second {
+                                50% {
+                                    transform: scale(1.2);
+                                }
+
+                                100% {
+                                    transform: scale(1);
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) i {
+                            animation: feature-third 1s ease-in-out forwards;
+
+                            @keyframes feature-third {
+                                50% {
+                                    transform: rotate(-20deg)
+                                }
+
+                                75% {
+                                    transform: rotate(20deg)
+                                }
+
+                                100% {
+                                    transform: rotate(0deg)
+                                }
+                            }
+                        }
+                    }
+
+                    i {
+                        font-size: 10ch;
+                        margin-bottom: 15px;
+                    }
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 22.5px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        margin: 0;
+                        opacity: .7;
+                    }
+                }
+            }
         }
     }
 }

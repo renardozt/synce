@@ -194,7 +194,7 @@
                     transition-delay: .5s;
                     opacity: 1;
                 }
-                
+
                 &::after {
                     display: block;
                     transition-delay: .5s;
@@ -281,7 +281,7 @@
             }
         }
 
-        button {
+        :is(button, a) {
             font-size: 20px;
             color: rgb(var(--theme-text));
             margin: 0;
@@ -316,14 +316,14 @@
             &.invite {
                 margin-left: 10px;
                 color: #38b6ff;
+                text-decoration: none;
+                display: inline-block;
+                font-weight: 700;
 
-                a {
-                    color: #38b6ff;
-                    text-decoration: none;
-                    text-transform: none;
+                button {
                     font-size: 15px;
-                    font-weight: 700;
-                    border-radius: 100%;
+                    color: inherit;
+                    text-transform: none;
                 }
             }
         }

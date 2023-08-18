@@ -1,1 +1,25 @@
-{}
+{
+    "welcome": {
+        "slogan": "Your Dream Bot",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maiores eum aperiam libero voluptatem a natus hic fugit illo debitis?",
+        "invite": "ADD TO SERVER!",
+        "support": "JOIN SUPPORT SERVER!"
+    },
+    "features": {
+        "title": "Features",
+        "cards": [
+            {
+                "title": "Easy to Use",
+                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+            },
+            {
+                "title": "24/7 Active Service",
+                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+            },
+            {
+                "title": "Live Support",
+                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+            }
+        ]
+    }
+}

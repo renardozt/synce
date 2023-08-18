@@ -165,9 +165,9 @@ export default class Navbar extends Component {
                                 </a>
                             </IconButton>
 
-                            <Button className='invite' variant="outlined" color="inherit">
-                                <a href={config.navbar.invite} target="_blank">{lang.invite}</a>
-                            </Button>
+                            <a className='invite' href={config.navbar.invite} target="_blank">
+                                <Button variant="outlined" color="inherit">{lang.invite}</Button>
+                            </a>
                         </div>
                     </div>
                 </div>
