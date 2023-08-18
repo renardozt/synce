@@ -125,11 +125,13 @@
 
         &:has(.dropdown) {
             .ph::before {
+                display: none;
                 transition: none;
                 opacity: 0 !important;
             }
 
             .ph::after {
+                display: none;
                 transition: none;
                 opacity: 0 !important;
             }
@@ -146,6 +148,7 @@
                 border-bottom: solid 7.5px transparent;
                 border-left: solid 7.5px transparent;
                 border-right: solid 7.5px transparent;
+                display: none;
                 border-bottom: solid 7.5px rgb(var(--theme-card));
                 position: absolute;
                 background-color: transparent;
@@ -162,6 +165,7 @@
                 color: rgb(var(--theme-text));
                 background-color: rgb(var(--theme-card));
                 opacity: 0;
+                display: none;
                 border-radius: 7.5px;
                 top: calc(100% + 12.5px);
                 cursor: auto;
@@ -176,11 +180,23 @@
 
             &:hover {
                 &::before {
+                    display: block;
+                }
+
+                &::after {
+                    display: block;
+                }
+            }
+
+            &:has(:is(img, span, i):hover) {
+                &::before {
+                    display: block;
                     transition-delay: .5s;
                     opacity: 1;
                 }
                 
                 &::after {
+                    display: block;
                     transition-delay: .5s;
                     opacity: 1;
                 }

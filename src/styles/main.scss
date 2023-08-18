@@ -12,10 +12,6 @@ html, body {
     font-size: 16px;
 }
 
-#root {
-    height: 2000px;
-}
-
 ::-moz-selection {
     -webkit-text-fill-color: rgb(var(--theme-card));
     color: rgb(var(--theme-card));

@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import '../styles/home.scss';
+import {
+    Welcome
+} from '../parts/Home'
 
-export default class xxx extends Component {
+export default class Home extends Component {
     render () {
         return (
-            <div id="xxx">
-
+            <div className="home">
+                <Welcome />
             </div>
         )
     }

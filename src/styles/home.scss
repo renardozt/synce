@@ -1,0 +1,43 @@
+.home {
+    #welcome {
+        padding: 200px 0;
+
+        .text-area {
+            display: grid;
+            place-content: center;
+
+            h1 {
+                font-weight: 700;
+
+                span {
+                    color: #38b6ff;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                column-gap: 1.5rem;
+
+                button {
+
+                    &.invite {
+                        color: #000;
+                        background-color: #38b6ffa1;
+
+                        &:hover {
+                            background-color: #38b6ff;
+                        }
+                    }
+
+                    &.support {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        img {
+            height: 250px;
+        }
+    }
+}
