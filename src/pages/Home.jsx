@@ -3,7 +3,8 @@ import '../styles/home.scss';
 import {
     Welcome,
     Features,
-    Stats
+    Stats,
+    Faq
 } from '../parts/Home'
 
 export default class Home extends Component {
@@ -15,6 +16,7 @@ export default class Home extends Component {
                 <Welcome lang={lang.welcome} />
                 <Features lang={lang.features} />
                 <Stats lang={lang.stats} />
+                <Faq lang={lang.faq} />
             </div>
         )
     }

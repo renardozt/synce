@@ -140,4 +140,176 @@
             }
         }
     }
+
+    #stats {
+        padding: 50px;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        position: relative;
+
+        .error {
+            height: 100%;
+            width: 100%;
+            z-index: 25;
+            left: 0;
+            top: 0;
+            display: grid;
+            place-content: center;
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            background: linear-gradient(to bottom, rgb(var(--theme-bg)), rgb(255, 0, 0));
+            backdrop-filter: blur(10px);
+
+            .container {
+                h1 {}
+
+                p {}
+            }
+        }
+
+        .container {
+
+            &>h1 {
+                font-weight: 700;
+            }
+
+            &>p {
+                color: rgb(var(--theme-hover));
+            }
+
+            .row {
+
+                .card {
+                    color: rgb(var(--theme-text));
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    padding: 0 15px;
+
+                    &.active {}
+
+                    i {
+                        font-size: 100px;
+                    }
+
+                    h1 {
+                        font-weight: 700;
+                        margin: 0;
+                        position: relative;
+
+                        &.count {
+                            transform: translateX(.5ch);
+                            animation: counter-left 1s ease-in-out forwards;
+                            animation-delay: 2s;
+
+                            @keyframes counter-left {
+                                to {
+                                    transform: none;
+                                }
+                            }
+
+                            &::after {
+                                content: "+";
+                                opacity: 0;
+                                animation: counter-opacity 1s ease-in-out forwards;
+                                animation-delay: 2s;
+
+                                @keyframes counter-opacity {
+                                    to {
+                                        opacity: 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    p {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    #faq {
+        padding: 50px 0;
+
+        .container {
+            &>h1 {
+                font-weight: 700;
+            }
+
+            .card {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                border-radius: 0;
+                border-top: rgb(var(--theme-text)) 1px solid;
+                padding: 0;
+
+                &:has(.answer.active) {
+                    border-top: none;
+                    .question {
+                        background-color: rgba(56, 182, 255, .1);
+                        border: #38b6ff 1px solid;
+
+                        h1 {
+                            color: #38b6ff;
+                        }
+
+                        i {
+                            color: #38b6ff;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    border: none;
+
+                    .question {
+                        border-radius: 5px 5px 0 0;
+                    }
+                }
+
+                .question {
+                    padding: 20px;
+                    cursor: pointer;
+                    border-radius: 0 0 5px 5px;
+                    transition-property: background-color, border;
+                    transition-duration: .4s;
+                    transition-timing-function: ease-in-out;
+
+                    h1 {
+                        font-size: 22.5px;
+                        font-weight: 700;
+                        margin: 0;
+                        transition: color .4s ease-in-out;
+                    }
+
+                    i {
+                        display: grid;
+                        place-content: center;
+                        font-size: 20px;
+                        vertical-align: middle;
+                        transition: all .4s ease-in-out;
+
+                        &.active {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .answer {
+                    display: none;
+                    padding: 0 20px;
+
+                    p {
+                        margin: 0;
+                        padding: 20px 0;
+                    }
+                }
+            }
+        }
+    }
 }

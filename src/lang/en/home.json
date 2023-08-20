@@ -21,5 +21,40 @@
                 "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
             }
         ]
+    },
+    "stats": {
+        "title": "Statistics",
+        "refresh": {
+            "default": "( Updated {replace} minutes ago. )",
+            "timeout": "( Updated a long time ago. )",
+            "now": "( Updated now. )"
+        },
+        "error": {
+            "title": "An error occured!",
+            "desc": "An error occurred while retrieving statistics. Please try again later.",
+            "button": "Refresh"
+        },
+        "cards": [
+            "Servers",
+            "Members",
+            "Channels"
+        ]
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "cards": [
+            {
+                "title": "Example Question 1",
+                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad error nihil, natus pariatur inventore tenetur temporibus animi aliquam repellendus."
+            },
+            {
+                "title": "Example Question 2",
+                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad error nihil, natus pariatur inventore tenetur temporibus animi aliquam repellendus."
+            },
+            {
+                "title": "Example Question 3",
+                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad error nihil, natus pariatur inventore tenetur temporibus animi aliquam repellendus."
+            }
+        ]
     }
 }

@@ -95,6 +95,15 @@
                 "fa-solid fa-circle-check",
                 "fa-solid fa-comments"
             ]
+        },
+        "stats": {
+            "url": "https://renardev.com/test.php",
+            "logo": "/stats.svg",
+            "cards": [
+                "fa-solid fa-server",
+                "fa-solid fa-users",
+                "fa-solid fa-hashtag"
+            ]
         }
     }
 }
