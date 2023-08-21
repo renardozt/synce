@@ -54,8 +54,12 @@
     "footer": {
         "socials": [
             {
-                "icon": "",
-                "link": ""
+                "icon": "fa-brands fa-discord",
+                "link": "https://discord.gg/GqkXqUvyaD"
+            },
+            {
+                "icon": "fa-brands fa-instagram",
+                "link": "https://www.instagram.com/syncebot/"
             }
         ],
         "quickLinks": [
@@ -98,7 +102,7 @@
             ]
         },
         "stats": {
-            "url": "https://renardev.com/test.php",
+            "url": "https://syncebot.com/stats.php",
             "logo": "/stats.svg",
             "cards": [
                 "fa-solid fa-server",

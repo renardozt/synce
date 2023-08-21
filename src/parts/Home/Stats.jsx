@@ -30,7 +30,7 @@ export default class Stats extends Component {
 
         axios.get(config.home.stats.url).then(req => {
             const data = req?.data;
-            console.log(data);
+            
             if (!data?.refresh) {
                 this.errorHandler();
                 return;

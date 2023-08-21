@@ -17,16 +17,15 @@ export default class Footer extends Component {
                         <div className="area col-12 col-xl-auto mb-3 mb-xl-0 social">
                             <h1>{lang.social.title}</h1>
                             <ul>
-                                <li>
-                                    <IconButton color="inherit" variant="text">
-                                        <a href="" ><i className="fa-brands fa-discord"></i></a>
-                                    </IconButton>
-                                </li>
-                                <li>
-                                    <IconButton color="inherit" variant="text">
-                                        <a href="" ><i className="fa-brands fa-instagram"></i></a>
-                                    </IconButton>
-                                </li>
+                                {config.footer.socials.map((social, index) => {
+                                    return (
+                                        <li>
+                                            <IconButton color="inherit" variant="text">
+                                                <a href={social.link} target="_blank"><i className={social.icon}></i></a>
+                                            </IconButton>
+                                        </li>
+                                    )
+                                })}
                             </ul>
                         </div>
                         <div className="area col-12 col-xl-auto mb-3 mb-xl-0 pages">

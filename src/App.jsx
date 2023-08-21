@@ -93,8 +93,8 @@ export default class App extends Component {
       <Router>
         <Navbar lang={this.state.lang.navbar} />
         <Routes>
-          <Route path="/" element={<Home lang={this.state.lang.home} />} />
           <Route path="/commands" element={<Commands theme={this.state.theme} lang={this.state.lang.commands} />} />
+          <Route path="*" element={<Home lang={this.state.lang.home} />} />
         </Routes>
         <Footer lang={this.state.lang.footer} />
       </Router>
