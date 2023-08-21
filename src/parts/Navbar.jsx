@@ -31,7 +31,7 @@ export default class Navbar extends Component {
         const navbar = $('.navbar');
         const scrollTop = $(window).scrollTop();
 
-        if (scrollTop > navbar.outerHeight() || window.location.pathname != '/')
+        if (scrollTop > navbar.outerHeight())
             navbar.removeClass('transparent')
         else {
             navbar.addClass('transparent');

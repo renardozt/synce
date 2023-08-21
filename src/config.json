@@ -105,5 +105,8 @@
                 "fa-solid fa-hashtag"
             ]
         }
+    },
+    "commands": {
+        "brace": "|"
     }
 }

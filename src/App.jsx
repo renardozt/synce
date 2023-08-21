@@ -90,7 +90,7 @@ export default class App extends Component {
     document.documentElement.style.setProperty('--theme-text', theme.text);
     document.documentElement.style.setProperty('--theme-hover', theme.hover);
 
-    this.setState({ theme: localStorage.getItem('theme') });
+    this.setState({ theme: selection });
   }
 
   render() {
@@ -99,7 +99,7 @@ export default class App extends Component {
         <Navbar lang={this.state.lang.navbar} />
         <Routes>
           <Route path="/" element={<Home lang={this.state.lang.home} />} />
-          <Route path="/commands" element={<Commands lang={this.state.lang.commands} />} />
+          <Route path="/commands" element={<Commands theme={this.state.theme} lang={this.state.lang.commands} />} />
         </Routes>
         <Footer lang={this.state.lang.footer} />
       </Router>

@@ -1,1 +1,63 @@
-{}
+{
+    "title": "Synce Komutları",
+    "desc": "Kayıp mı oldun? Burada tüm komutlara rahatlıkla erişebilirsin!",
+    "prefix": "s!",
+    "all": "Bütün Komutlar",
+    "categories": [
+        "Kategori 0 Komutları",
+        "Kategori 1 Komutları",
+        "Kategori 2 Komutları"
+    ],
+    "search": "Komutları Ara",
+    "commands": [
+        [
+            {
+                "name": "test1-category0",
+                "descriptions": [
+                    "Test Komutu"
+                ],
+                "args": "@Kullanıcı"
+            },
+            {
+                "name": "test2-category0",
+                "descriptions": [
+                    "Test Komutu"
+                ],
+                "args": "@Kullanıcı"
+            }
+        ],
+        [
+            {
+                "name": "test1-category1",
+                "descriptions": [
+                    "Test Komutu"
+                ],
+                "args": "@Kullanıcı"
+            },
+            {
+                "name": "test2-category1",
+                "descriptions": [
+                    "Test Komutu"
+                ],
+                "args": "@Kullanıcı"
+            }
+        ],
+        [
+            {
+                "name": "test1-category2",
+                "descriptions": [
+                    "Test Komutu"
+                ],
+                "args": "@Kullanıcı"
+            },
+            {
+                "name": "test2-category2",
+                "descriptions": [
+                    "Test Komutu",
+                    "Mükemmeldir"
+                ],
+                "args": "@Kullanıcı"
+            }
+        ]
+    ]
+}
