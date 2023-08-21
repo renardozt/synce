@@ -22,6 +22,13 @@
                         width: 100%;
                         margin-bottom: 10px;
                         text-align: left;
+                        transition-property: background-color, color;
+                        transition-duration: .4s;
+                        transition-timing-function: ease-in-out;
+
+                        &.active:hover {
+                            background-color: #38b6ff;
+                        }
 
                         &:last-child {
                             margin: 0;

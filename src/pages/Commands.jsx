@@ -91,10 +91,10 @@ export default class Commands extends Component {
                         <div className="categories col-3">
                             <ThemeProvider theme={this.props.theme == 'dark' ? darkTheme : lightTheme}>
                                 <div className="content">
-                                    <Button onClick={() => this.setCategory(-1)} variant={this.state.category == -1 ? 'contained' : 'text'}>Bütün Komutlar</Button>
+                                    <Button  className={this.state.category == -1 ? 'active' : ''} onClick={() => this.setCategory(-1)} variant={this.state.category == -1 ? 'contained' : 'text'}>Bütün Komutlar</Button>
                                     {lang.categories.map((category, index) => {
                                         return (
-                                            <Button onClick={() => this.setCategory(index)} variant={this.state.category == index ? 'contained' : 'text'} data-category={index}>{category}</Button>
+                                            <Button className={this.state.category == index ? 'active' : ''} onClick={() => this.setCategory(index)} variant={this.state.category == index ? 'contained' : 'text'} data-category={index}>{category}</Button>
                                         )
                                     })}
                                 </div>
