@@ -116,9 +116,9 @@
             {
                 "name": "isim-değiştir",
                 "descriptions": [
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                    "Etiketlenen kullanıcının ismini değiştirirsiniz."
                 ],
-                "args": ""
+                "args": "@Kullanıcı <Yeni İsim>"
             }
         ],
         [
@@ -156,6 +156,57 @@
                     "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
                 ],
                 "args": ""
+            }
+        ],
+        [
+            {
+                "name": "küfür-engel",
+                "descriptions": [
+                    "Küfür engelleme sistemini aktif/deaktif eder."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "reklam-engel",
+                "descriptions": [
+                    "Reklam engelleme sistemini aktif/deaktif eder."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "everyone-engel",
+                "descriptions": [
+                    "Everyone engel sistemini aktif/deaktif eder."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "antiraid",
+                "descriptions": [
+                    "Botların sunucuya saldırmasını önlemek için korumayı açarsınız/kapatırsınız."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "bot-izni",
+                "descriptions": [
+                    "Antiraid komutu için korunan sunucunuz için bir bota izin verir/izni kaldırır."
+                ],
+                "args": "Ver/Kaldır"
+            },
+            {
+                "name": "rol-koruma",
+                "descriptions": [
+                    "Rol koruma sistemini aktif/deaktif eder."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "kanal-koruma",
+                "descriptions": [
+                    "Kanal koruma sistemini aktif eder."
+                ],
+                "args": "Aç/Kapat"
             }
         ]
     ]
