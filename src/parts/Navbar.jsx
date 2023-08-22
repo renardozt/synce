@@ -101,7 +101,7 @@ export default class Navbar extends Component {
                             <ul className='pages'>
                                 {config.navbar.pages.map((page, index) => {
                                     return (
-                                        <li>
+                                        <li data-brace={config.navbar.brace}>
                                             <NavLink to={page}>
                                                 <Button>{lang.pages[index]}</Button>
                                             </NavLink>
@@ -165,7 +165,7 @@ export default class Navbar extends Component {
                                 </a>
                             </IconButton>
 
-                            <a className='invite' href={config.navbar.invite} target="_blank">
+                            <a className='invite' href={config.navbar.invite}>
                                 <Button variant="outlined" color="inherit">{lang.invite}</Button>
                             </a>
                         </div>

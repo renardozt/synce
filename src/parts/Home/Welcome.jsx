@@ -15,7 +15,7 @@ export default class Welcome extends Component {
                             <p>{lang.desc}</p>
 
                             <div className="buttons mt-2 justify-content-around justify-content-lg-start">
-                                <a className="invite" href={config.home.welcome.buttons.invite} target="_blank">
+                                <a className="invite" href={config.home.welcome.buttons.invite}>
                                     <Button variant="contained" color="inherit">{lang.invite}</Button>
                                 </a>
                                 <a className="support" href={config.home.welcome.buttons.support} target="_blank">

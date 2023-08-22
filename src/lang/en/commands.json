@@ -1,1 +1,27 @@
-{}
+{
+    "title": "Synce Commands",
+    "desc": "Are you lost? Here you can easily access all the commands!",
+    "prefix": "s!",
+    "category": "Categories",
+    "all": "All Commands",
+    "categories": [
+        "General Commands",
+        "Ticket Commands",
+        "Guard Commands",
+        "Moderation Commands"
+    ],
+    "search": "Search Command",
+    "notfound": "Out of {replace} commands, the command you are looking for was not found!",
+    "example": "Example Usage:",
+    "commands": [
+        [
+            {
+                "name": "",
+                "descriptions": [
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                ],
+                "args": ""
+            }
+        ]
+    ]
+}

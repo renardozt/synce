@@ -27,17 +27,12 @@ export default class App extends Component {
     this.setTheme();
     this.themeHandler();
     this.langHandler();
-    //this.loaderHandler();
+    this.fixQuery();
   }
 
-  /*loaderHandler() {
-    setTimeout(() => {
-      $('#loader img').addClass('active');
-      $('#loader').fadeOut(650);
-      $('html, body').scrollTop(0);
-      //setTimeout(() => $('html, body').css('overflow', ''),65e1)
-    }, 5e2)
-  }*/
+  fixQuery() {
+    window.history.pushState({}, document.title, window.location.pathname);
+  }
 
   langHandler() {
     $('html').attr('lang', localStorage.getItem('lang') || navigator.language.slice(0, 2) || 'en');

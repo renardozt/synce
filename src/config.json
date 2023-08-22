@@ -19,6 +19,7 @@
             "Synce",
             "Bot"
         ],
+        "brace": "|",
         "pages": [
             "/",
             "/commands"
@@ -48,7 +49,7 @@
             }
         ],
         "support": "https://discord.gg/GqkXqUvyaD",
-        "invite": ""
+        "invite": "https://discord.com/oauth2/authorize?client_id=1103976337615634432&permissions=8&redirect_uri=https://syncebot.com/commands&response_type=code&scope=bot%20applications.commands"
     },
     "footer": {
         "socials": [
@@ -84,7 +85,7 @@
                 "brace": "|"
             },
             "buttons": {
-                "invite": "",
+                "invite": "https://discord.com/oauth2/authorize?client_id=1103976337615634432&permissions=8&redirect_uri=https://syncebot.com/commands&response_type=code&scope=bot%20applications.commands",
                 "support": "https://discord.gg/GqkXqUvyaD"
             },
             "logo": "/laptop.png"

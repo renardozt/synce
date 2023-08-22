@@ -11,6 +11,7 @@ import config from '../config.json';
 import '../styles/commands.scss';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import $ from 'jquery';
+import { replacerJSX } from '../tools';
 
 const lightTheme = createTheme({
     palette: {
@@ -44,7 +45,7 @@ export default class Commands extends Component {
     arrayConverter(array) {
         let newArr = [];
 
-        if (typeof array[0] == "object") {
+        if (typeof array?.[0] == "object") {
             for (let i = 0; i < array.length; i++) {
                 newArr = newArr.concat(array[i]);
             }
@@ -58,9 +59,9 @@ export default class Commands extends Component {
     search() {
         const searchString = $('.commands .list #search-text').val();
         const commands = this.arrayConverter(this.state.category == -1 ? this.props.lang.commands : this.props.lang.commands[this.state.category]);
-        const search = commands.filter(cmd => cmd.name.toLocaleLowerCase('TR').includes(searchString?.toLocaleLowerCase('TR')));
+        const search = commands?.filter(cmd => cmd.name.toLocaleLowerCase('TR').includes(searchString?.toLocaleLowerCase('TR')));
 
-        this.setState({ search });
+        this.setState({ search: search || [] });
     }
 
     setCategory(categoryID) {
@@ -87,11 +88,14 @@ export default class Commands extends Component {
                 <div className="container">
                     <h1>{lang.title}</h1>
                     <p>{lang.desc}</p>
-                    <div className="row justfiy-content-around">
-                        <div className="categories col-3">
+                    <hr />
+                    <div className="row justify-content-around">
+                        <div className="categories col-4">
                             <ThemeProvider theme={this.props.theme == 'dark' ? darkTheme : lightTheme}>
                                 <div className="content">
-                                    <Button  className={this.state.category == -1 ? 'active' : ''} onClick={() => this.setCategory(-1)} variant={this.state.category == -1 ? 'contained' : 'text'}>Bütün Komutlar</Button>
+                                    <h1>{lang.category}</h1>
+                                    <hr />
+                                    <Button  className={this.state.category == -1 ? 'active' : ''} onClick={() => this.setCategory(-1)} variant={this.state.category == -1 ? 'contained' : 'text'}>{lang.all}</Button>
                                     {lang.categories.map((category, index) => {
                                         return (
                                             <Button className={this.state.category == index ? 'active' : ''} onClick={() => this.setCategory(index)} variant={this.state.category == index ? 'contained' : 'text'} data-category={index}>{category}</Button>
@@ -120,6 +124,9 @@ export default class Commands extends Component {
                                     />
                                 </FormControl>
                             </ThemeProvider>
+                            {this.state.search.length == 0 &&
+                            <p className='error mt-3'>{replacerJSX(lang.notfound, 'span', `${this.state.category == -1 ? lang.commands.length : lang.commands[this.state.category]?.length || 0}`)}</p>
+                                }
                             <div className="commands-list">
                                 {this.state.search.map((cmd, index) => {
 
@@ -128,7 +135,7 @@ export default class Commands extends Component {
                                             <div onClick={(e) => this.exampleHandler(e)} className="main">
                                                 <div className="d-flex">
                                                     <h1 className='mr-1'>
-                                                        {cmd.name}
+                                                        {lang.prefix}{cmd.name}
                                                     </h1>
                                                     <div className="descriptions">
                                                         {cmd.descriptions.map((desc, index) => {
@@ -142,7 +149,7 @@ export default class Commands extends Component {
                                             </div>
 
                                             <div className="example">
-                                                <p>{lang.prefix}{cmd.name} {cmd.args}</p>
+                                                <p><b>{lang.example}</b> {lang.prefix}{cmd.name} {cmd.args}</p>
                                             </div>
                                         </div>
                                     )

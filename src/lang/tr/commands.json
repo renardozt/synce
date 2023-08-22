@@ -2,61 +2,160 @@
     "title": "Synce Komutları",
     "desc": "Kayıp mı oldun? Burada tüm komutlara rahatlıkla erişebilirsin!",
     "prefix": "s!",
-    "all": "Bütün Komutlar",
+    "category": "Kategoriler",
+    "all": "Tüm Komutlar",
     "categories": [
-        "Kategori 0 Komutları",
-        "Kategori 1 Komutları",
-        "Kategori 2 Komutları"
+        "Genel Komutlar",
+        "Ticket Komutları",
+        "Koruma Komutları",
+        "Moderasyon Komutları"
     ],
-    "search": "Komutları Ara",
+    "search": "Komutlarda Ara",
+    "notfound": "{replace} tane komut içerisinde aradığınız komut bulunamadı!",
+    "example": "Örnek Kullanım:",
     "commands": [
         [
             {
-                "name": "test1-category0",
+                "name": "id",
                 "descriptions": [
-                    "Test Komutu"
+                    "Etiketlediğiniz kullanıcının idsini atar."
                 ],
                 "args": "@Kullanıcı"
             },
             {
-                "name": "test2-category0",
+                "name": "afk",
                 "descriptions": [
-                    "Test Komutu"
+                    "Afk moduna geçersiniz."
+                ],
+                "args": "Sebep"
+            },
+            {
+                "name": "git",
+                "descriptions": [
+                    "Kullanıcının bulunduğu kanala gidersiniz."
                 ],
                 "args": "@Kullanıcı"
+            },
+            {
+                "name": "say",
+                "descriptions": [
+                    "Sunucudaki üyeleri sayar."
+                ],
+                "args": ""
+            },
+            {
+                "name": "taç",
+                "descriptions": [
+                    "Sunucu sahibini gösterir."
+                ],
+                "args": ""
+            },
+            {
+                "name": "gel",
+                "descriptions": [
+                    "Kullanıcıyı kanala getirir."
+                ],
+                "args": "@Kullanıcı"
+            },
+            {
+                "name": "ping",
+                "descriptions": [
+                    "Botun tepkime hızını atar."
+                ],
+                "args": ""
+            },
+            {
+                "name": "davet",
+                "descriptions": [
+                    "Botun davet linkini atar."
+                ],
+                "args": ""
+            },
+            {
+                "name": "destek",
+                "descriptions": [
+                    "Destek ekibimizi çağırabilirsin!"
+                ],
+                "args": ""
+            },
+            {
+                "name": "avatar",
+                "descriptions": [
+                    "Etiketlediğiniz kullanıcının avatarını atar. "
+                ],
+                "args": "@Kullanıcı"
+            },
+            {
+                "name": "kanal-id",
+                "descriptions": [
+                    "Etiketlediğiniz kanalın idsini atar."
+                ],
+                "args": "#Kanal"
+            },
+            {
+                "name": "hakkımızda",
+                "descriptions": [
+                    "Bot hakkında bilgi edinebilirsin!"
+                ],
+                "args": ""
+            },
+            {
+                "name": "istatistikler",
+                "descriptions": [
+                    "Botun istatistiklerine bakabilirsin."
+                ],
+                "args": ""
+            },
+            {
+                "name": "yetkilerim",
+                "descriptions": [
+                    "Yetkilerinizi gösterir."
+                ],
+                "args": ""
+            },
+            {
+                "name": "isim-değiştir",
+                "descriptions": [
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                ],
+                "args": ""
             }
         ],
         [
             {
-                "name": "test1-category1",
+                "name": "ticket-kanal",
                 "descriptions": [
-                    "Test Komutu"
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
                 ],
-                "args": "@Kullanıcı"
+                "args": ""
             },
             {
-                "name": "test2-category1",
+                "name": "ticket-oluştur",
                 "descriptions": [
-                    "Test Komutu"
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
                 ],
-                "args": "@Kullanıcı"
-            }
-        ],
-        [
-            {
-                "name": "test1-category2",
-                "descriptions": [
-                    "Test Komutu"
-                ],
-                "args": "@Kullanıcı"
+                "args": ""
             },
             {
-                "name": "test2-category2",
+                "name": "ticket-kapat",
                 "descriptions": [
-                    "Test Komutu",
-                    "Mükemmeldir"
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
                 ],
-                "args": "@Kullanıcı"
+                "args": ""
+            },
+            {
+                "name": "ticket-sil",
+                "descriptions": [
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                ],
+                "args": ""
+            },
+            {
+                "name": "ticket-aç",
+                "descriptions": [
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                ],
+                "args": ""
             }
         ]
     ]

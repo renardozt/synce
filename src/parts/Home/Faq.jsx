@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import { replacerJSX } from '../../tools';
 
 export default class faq extends Component {
     render() {
@@ -63,7 +64,7 @@ const Question = class Question extends Component {
                 </div>
 
                 <div className="answer">
-                    <p>{this.props.desc}</p>
+                    <p>{replacerJSX(this.props.desc, 'br')}</p>
                 </div>
             </div>
         )

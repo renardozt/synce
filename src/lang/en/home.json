@@ -1,7 +1,7 @@
 {
     "welcome": {
         "slogan": "Your Dream Bot",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maiores eum aperiam libero voluptatem a natus hic fugit illo debitis?",
+        "desc": "Synce Bot protects your server and speeds up your moderation processes.",
         "invite": "ADD TO SERVER!",
         "support": "JOIN SUPPORT SERVER!"
     },
@@ -10,15 +10,15 @@
         "cards": [
             {
                 "title": "Easy to Use",
-                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+                "desc": "The bot is easy to use with its help menu, commands and website."
             },
             {
                 "title": "24/7 Active Service",
-                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+                "desc": "Our bot offers 24/7 active service with VDS with Intel Core i9 9900KF processor."
             },
             {
                 "title": "Live Support",
-                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+                "desc": "With our support command, you can call the support team and get live support."
             }
         ]
     },
@@ -44,16 +44,16 @@
         "title": "Frequently Asked Questions",
         "cards": [
             {
-                "title": "Example Question 1",
-                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad error nihil, natus pariatur inventore tenetur temporibus animi aliquam repellendus."
+                "title": "What does Synce do?",
+                "desc": "Synce helps you with moderation, tickets, server setup."
             },
             {
-                "title": "Example Question 2",
-                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad error nihil, natus pariatur inventore tenetur temporibus animi aliquam repellendus."
+                "title": "How do I get support?",
+                "desc": "You can call the support team using the s!support command.{replace}Support Team Working Hours: 12:00 - 22:00"
             },
             {
-                "title": "Example Question 3",
-                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad error nihil, natus pariatur inventore tenetur temporibus animi aliquam repellendus."
+                "title": "Is it totally free?",
+                "desc": "Yes, our bot is completely free! Our main principle is that all our users can use our bot easily and without the hassle of paying."
             }
         ]
     }

@@ -1,7 +1,7 @@
 {
     "welcome": {
         "slogan": "Hayalinizdeki Bot",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maiores eum aperiam libero voluptatem a natus hic fugit illo debitis?",
+        "desc": "Synce Bot sunucunuzu korur ve moderasyon işlemlerinizi hızlandırır.",
         "invite": "SUNUCUYA EKLE!",
         "support": "DESTEK SUNUCUMUZA KATIL!"
     },
@@ -10,15 +10,15 @@
         "cards": [
             {
                 "title": "Kolay Kullanım",
-                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+                "desc": "Bot; yardım menüsü, komutları ve sitesi ile kolay kullanım sunar."
             },
             {
                 "title": "7/24 Aktif Hizmet",
-                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+                "desc": "Botumuz, Intel Core i9 9900KF işlemcili VDS ile hizmet 7/24 aktif hizmet sunar."
             },
             {
                 "title": "Canlı Destek",
-                "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, distinctio!"
+                "desc": "Destek komutumuz ile destek ekibini çağırıp canlı destek alabilirsiniz."
             }
         ]
     },
@@ -44,16 +44,16 @@
         "title": "Sıkça Sorulan Sorular",
         "cards": [
             {
-                "title": "Örnek Soru 1",
-                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad error nihil, natus pariatur inventore tenetur temporibus animi aliquam repellendus."
+                "title": "Synce ne işe yarar?",
+                "desc": "Synce; moderasyon, ticket, sunucu kurma işlemlerinde size yardımcı olur."
             },
             {
-                "title": "Örnek Soru 2",
-                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad error nihil, natus pariatur inventore tenetur temporibus animi aliquam repellendus."
+                "title": "Nasıl destek alırım?",
+                "desc": "s!destek komutunu kullanarak destek ekibini çağırabilirsin.{replace}Destek Ekibi Çalışma Saatleri: 12:00 - 22:00"
             },
             {
-                "title": "Örnek Soru 3",
-                "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad error nihil, natus pariatur inventore tenetur temporibus animi aliquam repellendus."
+                "title": "Tamamen ücretsiz mi?",
+                "desc": "Evet, botumuz tamamen ücretsiz! Tüm kullanıcılarımızın botumuzu rahatlıkla ve ödeme yapma derdi olmadan kullanabilmesi temel prensibimizdir."
             }
         ]
     }
