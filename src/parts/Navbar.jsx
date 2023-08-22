@@ -96,12 +96,12 @@ export default class Navbar extends Component {
                             <h1 className="title"><span>{config.navbar.brand[0]}</span> {config.navbar.brand[1]}</h1>
                         </div>
                     </div>
-                    <div className="col-4 text-center justify-content-center">
+                    <div className="col col-md-4 text-center justify-content-center">
                         <div className="navbar-pages">
                             <ul className='pages'>
                                 {config.navbar.pages.map((page, index) => {
                                     return (
-                                        <li data-brace={config.navbar.brace}>
+                                        <li key={index} data-brace={config.navbar.brace}>
                                             <NavLink to={page}>
                                                 <Button>{lang.pages[index]}</Button>
                                             </NavLink>
@@ -117,13 +117,13 @@ export default class Navbar extends Component {
                                 <Button data-placeholder={lang.language} onClick={() => this.dropdownHandler('lang')} className='lang ph' variant="text" size="large" color="inherit">
                                     <img src={`/img/lang/${lang.code}.png`} alt="" />
                                     <span>{lang.code}</span>
-                                    <i class="fa-solid fa-angle-down"></i>
+                                    <i className="fa-solid fa-angle-down"></i>
                                 </Button>
 
                                 {this.state.dropdown == 'lang' && <ul className="dropdown">
                                     {config.navbar.languages.map((lang, index) => {
                                         return (
-                                            <li data-lang={lang.code}>
+                                            <li key={index} data-lang={lang.code}>
                                                 <Button fullWidth={true}
                                                     style={{ justifyContent: "flex-start" }}
                                                     size="small"
@@ -145,7 +145,7 @@ export default class Navbar extends Component {
                                 {this.state.dropdown == 'theme' && <ul className="dropdown">
                                     {config.navbar.themes.map((theme, index) => {
                                         return (
-                                            <li data-theme={theme.value}>
+                                            <li key={index} data-theme={theme.value}>
                                                 <Button fullWidth={true}
                                                     style={{ justifyContent: "flex-start" }}
                                                     size="small"
@@ -161,7 +161,7 @@ export default class Navbar extends Component {
 
                             <IconButton data-placeholder={lang.support} className='support ph' variant="outlined">
                                 <a href={config.navbar.support} target="_blank">
-                                    <i class="fa-brands fa-discord"></i>
+                                    <i className="fa-brands fa-discord"></i>
                                 </a>
                             </IconButton>
 

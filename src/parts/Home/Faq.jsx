@@ -60,7 +60,7 @@ const Question = class Question extends Component {
                     <h1>
                         {this.props.title}
                     </h1>
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <i className="fa-solid fa-chevron-down"></i>
                 </div>
 
                 <div className="answer">

@@ -19,12 +19,12 @@ export default class Footer extends Component {
                             <ul>
                                 <li>
                                     <IconButton color="inherit" variant="text">
-                                        <a href="" ><i class="fa-brands fa-discord"></i></a>
+                                        <a href="" ><i className="fa-brands fa-discord"></i></a>
                                     </IconButton>
                                 </li>
                                 <li>
                                     <IconButton color="inherit" variant="text">
-                                        <a href="" ><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="" ><i className="fa-brands fa-instagram"></i></a>
                                     </IconButton>
                                 </li>
                             </ul>
@@ -34,7 +34,7 @@ export default class Footer extends Component {
                             <ul>
                                 {config.footer.quickLinks.map((ql, index) => {
                                     return (
-                                        <li>
+                                        <li key={index}>
                                             <Link to={ql} target={ql.startsWith('/') ? "_self" : "_blank"}>{lang.quickLinks.pages[index]}</Link>
                                         </li>
                                     )

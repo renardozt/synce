@@ -16,11 +16,318 @@
     "commands": [
         [
             {
-                "name": "",
+                "name": "id",
                 "descriptions": [
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                    "Sends the id of the user you tagged."
+                ],
+                "args": "@User"
+            },
+            {
+                "name": "afk",
+                "descriptions": [
+                    "You go into afk mode."
+                ],
+                "args": "Reason"
+            },
+            {
+                "name": "git",
+                "descriptions": [
+                    "You go to the channel where the user is located."
+                ],
+                "args": "@User"
+            },
+            {
+                "name": "say",
+                "descriptions": [
+                    "Counts the members on the server."
                 ],
                 "args": ""
+            },
+            {
+                "name": "taç",
+                "descriptions": [
+                    "Shows the server owner."
+                ],
+                "args": ""
+            },
+            {
+                "name": "gel",
+                "descriptions": [
+                    "Brings the user to the channel."
+                ],
+                "args": "@User"
+            },
+            {
+                "name": "ping",
+                "descriptions": [
+                    "Sends the reaction speed of the bot."
+                ],
+                "args": ""
+            },
+            {
+                "name": "davet",
+                "descriptions": [
+                    "Sends the bot's invitation link."
+                ],
+                "args": ""
+            },
+            {
+                "name": "destek",
+                "descriptions": [
+                    "You can call our support team!"
+                ],
+                "args": ""
+            },
+            {
+                "name": "avatar",
+                "descriptions": [
+                    "Sends the avatar of the user you tagged."
+                ],
+                "args": "@User"
+            },
+            {
+                "name": "kanal-id",
+                "descriptions": [
+                    "Sends the id of the channel you tagged."
+                ],
+                "args": "#Channel"
+            },
+            {
+                "name": "hakkımızda",
+                "descriptions": [
+                    "You can learn about the bot!"
+                ],
+                "args": ""
+            },
+            {
+                "name": "istatistikler",
+                "descriptions": [
+                    "You can look at the statistics of the bot."
+                ],
+                "args": ""
+            },
+            {
+                "name": "yetkilerim",
+                "descriptions": [
+                    "It shows your authorizations."
+                ],
+                "args": ""
+            },
+            {
+                "name": "isim-değiştir",
+                "descriptions": [
+                    "You change the name of the tagged user."
+                ],
+                "args": "@User <New Name>"
+            },
+            {
+                "name": "sunucu-bilgi",
+                "descriptions": [
+                    "Gives information about your server."
+                ],
+                "args": ""
+            }
+        ],
+        [
+            {
+                "name": "ticket-kanal",
+                "descriptions": [
+                    "You set the ticket channel."
+                ],
+                "args": "Ayarla/Sıfırla"
+            },
+            {
+                "name": "ticket-oluştur",
+                "descriptions": [
+                    "You create the ticket message."
+                ],
+                "args": ""
+            },
+            {
+                "name": "ticket-kapat",
+                "descriptions": [
+                    "You close the ticket."
+                ],
+                "args": ""
+            },
+            {
+                "name": "ticket-sil",
+                "descriptions": [
+                    "You delete the ticket."
+                ],
+                "args": ""
+            },
+            {
+                "name": "ticket-aç",
+                "descriptions": [
+                    "You create a ticket."
+                ],
+                "args": ""
+            }
+        ],
+        [
+            {
+                "name": "küfür-engel",
+                "descriptions": [
+                    "Activates/deactivates the profanity blocking system."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "reklam-engel",
+                "descriptions": [
+                    "Activates/deactivates the ad blocking system."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "everyone-engel",
+                "descriptions": [
+                    "Activates/deactivates the everyone blocking system."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "antiraid",
+                "descriptions": [
+                    "You turn protection on/off to prevent bots from attacking the server."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "bot-izni",
+                "descriptions": [
+                    "Allows/unallows a bot for your protected server for the antiraid command."
+                ],
+                "args": "Ver/Kaldır"
+            },
+            {
+                "name": "rol-koruma",
+                "descriptions": [
+                    "Activates/deactivates the role protection system."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "kanal-koruma",
+                "descriptions": [
+                    "Activates the channel protection system."
+                ],
+                "args": "Aç/Kapat"
+            }
+        ],
+        [
+            {
+                "name": "nuke",
+                "descriptions": [
+                    "Nukes the current channel and adds a new one."
+                ],
+                "args": ""
+            },
+            {
+                "name": "çekiliş",
+                "descriptions": [
+                    "It makes a giveaway on the channel where you use the command."
+                ],
+                "args": "Prize Time Winners"
+            },
+            {
+                "name": "mod-log",
+                "descriptions": [
+                    "Sends moderation logs to this channel."
+                ],
+                "args": "#Channel/Sıfırla"
+            },
+            {
+                "name": "unban",
+                "descriptions": [
+                    "Unbans the user whose ID you specify from the server."
+                ],
+                "args": "ID"
+            },
+            {
+                "name": "ban",
+                "descriptions": [
+                    "Bans the user you tagged/ID from the server."
+                ],
+                "args": "@User/ID"
+            },
+            {
+                "name": "sa-as",
+                "descriptions": [
+                    "The bot receives your greeting and responds."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "kick",
+                "descriptions": [
+                    "Kickes the user you tagged/ID from the server."
+                ],
+                "args": "@User/ID"
+            },
+            {
+                "name": "sohbet",
+                "descriptions": [
+                    "You turn on/off sending messages to the chat."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "yavaşmod",
+                "descriptions": [
+                    "Sets the slowmod duration."
+                ],
+                "args": "1-21600"
+            },
+            {
+                "name": "mute",
+                "descriptions": [
+                    "Mutes the user you have tagged/ID'd."
+                ],
+                "args": "unknown"
+            },
+            {
+                "name": "sil",
+                "descriptions": [
+                    "Deletes the amount of messages you specify."
+                ],
+                "args": "Number of Messages to Delete"
+            },
+            {
+                "name": "rol-al",
+                "descriptions": [
+                    "You get the role you tag from the user you tag."
+                ],
+                "args": "@Role @User"
+            },
+            {
+                "name": "rol-ver",
+                "descriptions": [
+                    "You give the role you tag to the user you tag."
+                ],
+                "args": "@Role @User"
+            },
+            {
+                "name": "sayaç",
+                "descriptions": [
+                    "You set the counter channel and target."
+                ],
+                "args": "Ayarla #Channel Target /Sıfırla"
+            },
+            {
+                "name": "otorol",
+                "descriptions": [
+                    "Gives the users coming to the server the role you tagged. Sends it to the channel you tagged."
+                ],
+                "args": "Ayarla @Role #Channel /Sıfırla"
+            },
+            {
+                "name": "üye-sil",
+                "descriptions": [
+                    "Deletes the specified amount of messages from the member you tagged."
+                ],
+                "args": "@User Number of Messages to Delete"
             }
         ]
     ]

@@ -42,6 +42,15 @@ export default class Commands extends Component {
         }
     }
 
+    componentDidMount() {
+        $(document).on('click', '.navbar .navbar-end .dropdown li', (el) => {
+            const language = $(el.currentTarget).attr('data-lang');
+            if (!language) return;
+
+            setTimeout(() => this.search(), 500);
+        });
+    }
+
     arrayConverter(array) {
         let newArr = [];
 
@@ -105,10 +114,10 @@ export default class Commands extends Component {
                                 <div className="content">
                                     <h1>{lang.category}</h1>
                                     <hr />
-                                    <Button  className={this.state.category == -1 ? 'active' : ''} onClick={() => this.setCategory(-1)} variant={this.state.category == -1 ? 'contained' : 'text'}>{lang.all}</Button>
+                                    <Button className={this.state.category == -1 ? 'active' : ''} onClick={() => this.setCategory(-1)} variant={this.state.category == -1 ? 'contained' : 'text'}>{lang.all}</Button>
                                     {lang.categories.map((category, index) => {
                                         return (
-                                            <Button className={this.state.category == index ? 'active' : ''} onClick={() => this.setCategory(index)} variant={this.state.category == index ? 'contained' : 'text'} data-category={index}>{category}</Button>
+                                            <Button key={index} className={this.state.category == index ? 'active' : ''} onClick={() => this.setCategory(index)} variant={this.state.category == index ? 'contained' : 'text'} data-category={index}>{category}</Button>
                                         )
                                     })}
                                 </div>
@@ -126,7 +135,7 @@ export default class Commands extends Component {
                                                 <IconButton
                                                     edge="end"
                                                 >
-                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                    <i className="fa-solid fa-magnifying-glass"></i>
                                                 </IconButton>
                                             </InputAdornment>
                                         }
@@ -150,7 +159,7 @@ export default class Commands extends Component {
                                                     <div className="descriptions">
                                                         {cmd.descriptions.map((desc, index) => {
                                                             return (
-                                                                <p> {config.commands.brace} {desc}</p>
+                                                                <p key={index}> {config.commands.brace} {desc}</p>
                                                             )
                                                         })
                                                         }

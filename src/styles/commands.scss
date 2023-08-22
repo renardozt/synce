@@ -36,9 +36,14 @@
                         display: block;
                         width: 100%;
                         margin-bottom: 10px;
+                        text-align: left;
                         transition-property: background-color, color;
                         transition-duration: .4s;
                         transition-timing-function: ease-in-out;
+
+                        @media screen and (max-width: 991px) {
+                            text-align: center;
+                        }
 
                         &.active:hover {
                             background-color: #38b6ff;

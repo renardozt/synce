@@ -119,6 +119,13 @@
                     "Etiketlenen kullanıcının ismini değiştirirsiniz."
                 ],
                 "args": "@Kullanıcı <Yeni İsim>"
+            },
+            {
+                "name": "sunucu-bilgi",
+                "descriptions": [
+                    "Sunucunuz hakkında bilgi verir."
+                ],
+                "args": ""
             }
         ],
         [
@@ -207,6 +214,120 @@
                     "Kanal koruma sistemini aktif eder."
                 ],
                 "args": "Aç/Kapat"
+            }
+        ],
+        [
+            {
+                "name": "nuke",
+                "descriptions": [
+                    "Bulunduğunuz kanalı patlatıp yenisini ekler."
+                ],
+                "args": ""
+            },
+            {
+                "name": "çekiliş",
+                "descriptions": [
+                    "Komutu kullandığınız kanalda çekiliş yapar."
+                ],
+                "args": "Ödül Zaman Kazanan"
+            },
+            {
+                "name": "mod-log",
+                "descriptions": [
+                    "Moderasyon kayıtlarını bu kanala gönderir."
+                ],
+                "args": "#Kanal/Sıfırla"
+            },
+            {
+                "name": "unban",
+                "descriptions": [
+                    "ID'sini belirttiğiniz kullanıcının sunucudaki yasaklamasını kaldırır."
+                ],
+                "args": "ID"
+            },
+            {
+                "name": "ban",
+                "descriptions": [
+                    "Etiketlediğiniz/ID'sini belirttiğiniz kullanıcıyı sunucudan yasaklar."
+                ],
+                "args": "@Kullanıcı/ID"
+            },
+            {
+                "name": "sa-as",
+                "descriptions": [
+                    "Bot selamınızı alır ve cevap verir."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "kick",
+                "descriptions": [
+                    "Etiketlediğiniz/ID'sini belirttiğiniz kullanıcıyı sunucudan atar."
+                ],
+                "args": "@Kullanıcı/ID"
+            },
+            {
+                "name": "sohbet",
+                "descriptions": [
+                    "Sohbete mesaj göndermeyi açarsınız/kapatırsınız."
+                ],
+                "args": "Aç/Kapat"
+            },
+            {
+                "name": "yavaşmod",
+                "descriptions": [
+                    "Yavaşmod süresini ayarlar."
+                ],
+                "args": "1-21600"
+            },
+            {
+                "name": "mute",
+                "descriptions": [
+                    "Etiketlediğiniz/ID'sini belirttiğiniz kullanıcıyı susturur."
+                ],
+                "args": "unknown"
+            },
+            {
+                "name": "sil",
+                "descriptions": [
+                    "Belirttiğiniz miktarda mesaj siler."
+                ],
+                "args": "Silinecek Mesaj Sayısı"
+            },
+            {
+                "name": "rol-al",
+                "descriptions": [
+                    "Etiketlediğiniz rolü etiketlediğiniz kullanıcıdan alırsınız."
+                ],
+                "args": "@Rol @Kullanıcı"
+            },
+            {
+                "name": "rol-ver",
+                "descriptions": [
+                    "Etiketlediğiniz rolü etiketlediğiniz kullanıcıya verirsiniz."
+                ],
+                "args": "@Rol @Kullanıcı"
+            },
+            {
+                "name": "sayaç",
+                "descriptions": [
+                    "Sayaç kanalını ve hedefini ayarlarsınız."
+                ],
+                "args": "Ayarla #Kanal Hedef /Sıfırla"
+            },
+            {
+                "name": "otorol",
+                "descriptions": [
+                    "Sunucuya gelen kullanıcılara etiketlediğiniz rolü verir. Bunu etiketlediğiniz kanala atar."
+                ],
+                "args": "Ayarla @Rol #Kanal /Sıfırla"
+            },
+            {
+                "name": "üye-sil",
+                "descriptions": [
+                    "Etiketlediğiniz üyenin belirttiğiniz miktarda mesajını siler."
+                ],
+                "args": "@Kullanıcı Silinecek Mesaj Sayısı"
             }
         ]
     ]

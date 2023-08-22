@@ -103,7 +103,7 @@ export default class Stats extends Component {
                         </div>
                         {config.home.stats.cards.map((card, index) => {
                             return (
-                                <Stat icon={card} count={this.state.stats[index]} title={lang.cards[index]} />
+                                <Stat key={index} icon={card} count={this.state.stats[index]} title={lang.cards[index]} />
                             )
                         })}
                     </div>
@@ -127,7 +127,7 @@ const Stat = class Stat extends Component {
                 {({ isVisible }) => {
                     return (
                         <div className={`card mb-5 mb-lg-0 col-12 col-lg-3${isVisible ? ' active' : ''}`}>
-                            <i class={this.props.icon}></i>
+                            <i className={this.props.icon}></i>
                             {isVisible ? <h1 className='count'><CountUp end={this.props.count} duration={2} /></h1> : <h1>0</h1>}
                             <p>{this.props.title}</p>
                         </div>

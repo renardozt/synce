@@ -14,7 +14,7 @@ export default class Features extends Component {
                     <div className="row">
                         {config.home.features.cards.map((card, index) => {
                             return (
-                                <Feature icon={card} title={lang.cards[index].title} desc={lang.cards[index].desc} />
+                                <Feature key={index} icon={card} title={lang.cards[index].title} desc={lang.cards[index].desc} />
                             )
                         })}
                     </div>
@@ -38,7 +38,7 @@ const Feature = class Feature extends Component {
                 {({ isVisible }) => {
                     return (
                         <div className={`card mb-5 mb-lg-0 col-12 col-lg-4${isVisible ? ' active' : ''}`}>
-                            <i class={this.props.icon}></i>
+                            <i className={this.props.icon}></i>
                             <h1>{this.props.title}</h1>
                             <p>{this.props.desc}</p>
                         </div>

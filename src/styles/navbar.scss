@@ -12,15 +12,6 @@
     backdrop-filter: blur(10px);
     z-index: 25;
 
-    @media screen and (max-width: 472px) {
-        .col:has(.navbar-brand) {
-            display: none !important;
-        }
-        .navbar-end {
-            text-align: center !important;
-        }
-    }
-
     @media screen and (max-width: 768px) {
         .navbar-brand {
             .title {
@@ -28,8 +19,15 @@
             }
         }
 
-        .col-4:has(.navbar-pages) {
+        .navbar-pages {
+            text-align: center;
+        }
+
+        .col:has(.navbar-brand) {
             display: none !important;
+        }
+        .navbar-end {
+            text-align: center !important;
         }
     }
 
