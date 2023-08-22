@@ -20,14 +20,11 @@
                     padding: 10px;
                     border-radius: 5px;
                     background-color: rgb(var(--theme-card));
+                    margin-bottom: 10px;
 
                     & > h1 {
                         font-size: 22.5px;
                         margin: 0;
-                    }
-
-                    & > p {
-                        
                     }
 
                     hr {
@@ -39,7 +36,6 @@
                         display: block;
                         width: 100%;
                         margin-bottom: 10px;
-                        text-align: left;
                         transition-property: background-color, color;
                         transition-duration: .4s;
                         transition-timing-function: ease-in-out;

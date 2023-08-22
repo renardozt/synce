@@ -86,7 +86,7 @@ export default class Navbar extends Component {
             <div className="navbar transparent">
                 <title>{config.navbar.brand.join(' ')} | {lang.slogan}</title>
                 <div className="container-fluid justify-content-between">
-                    <div className="col-4 text-left justify-content-center">
+                    <div className="col col-md-4 text-left justify-content-start">
                         <div className="navbar-brand">
                             <Link to="">
                                 <IconButton>
@@ -111,7 +111,7 @@ export default class Navbar extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-4 text-right justify-content-center">
+                    <div className="col col-md-4 text-right justify-content-end">
                         <div className="navbar-end">
                             <div className="dropdown-area">
                                 <Button data-placeholder={lang.language} onClick={() => this.dropdownHandler('lang')} className='lang ph' variant="text" size="large" color="inherit">

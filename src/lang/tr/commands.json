@@ -125,35 +125,35 @@
             {
                 "name": "ticket-kanal",
                 "descriptions": [
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                    "Ticket kanalını ayarlarsınız."
                 ],
-                "args": ""
+                "args": "Ayarla/Sıfırla"
             },
             {
                 "name": "ticket-oluştur",
                 "descriptions": [
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                    "Ticket mesajını oluşturursunuz."
                 ],
                 "args": ""
             },
             {
                 "name": "ticket-kapat",
                 "descriptions": [
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                    "Ticket'ı kapatırsınız."
                 ],
                 "args": ""
             },
             {
                 "name": "ticket-sil",
                 "descriptions": [
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                    "Ticket'i silersiniz."
                 ],
                 "args": ""
             },
             {
                 "name": "ticket-aç",
                 "descriptions": [
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                    "Ticket oluşturursunuz."
                 ],
                 "args": ""
             }

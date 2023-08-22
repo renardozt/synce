@@ -100,7 +100,7 @@ export default class Commands extends Component {
                     <p>{lang.desc}</p>
                     <hr />
                     <div className="row justify-content-around">
-                        <div className="categories col-4">
+                        <div className="categories col-12 col-lg-4 text-center text-lg-left">
                             <ThemeProvider theme={this.props.theme == 'dark' ? darkTheme : lightTheme}>
                                 <div className="content">
                                     <h1>{lang.category}</h1>
@@ -114,7 +114,7 @@ export default class Commands extends Component {
                                 </div>
                             </ThemeProvider>
                         </div>
-                        <div className="list col-8">
+                        <div className="list col-12 col-lg-8">
                             <ThemeProvider theme={this.props.theme == 'dark' ? darkTheme : lightTheme}>
                                 <FormControl sx={{ width: "100%" }} variant="outlined">
                                     <InputLabel>{lang.search}</InputLabel>
@@ -135,7 +135,7 @@ export default class Commands extends Component {
                                 </FormControl>
                             </ThemeProvider>
                             {this.state.search.length == 0 &&
-                            <p className='error mt-3'>{replacerJSX(lang.notfound, 'span', `${this.state.category == -1 ? lang.commands.length : lang.commands[this.state.category]?.length || 0}`)}</p>
+                            <p className='error mt-3'>{replacerJSX(lang.notfound, 'span', `${this.state.category == -1 ? this.arrayConverter(lang.commands).length : lang.commands[this.state.category]?.length || 0}`)}</p>
                                 }
                             <div className="commands-list">
                                 {this.state.search.map((cmd, index) => {

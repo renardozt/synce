@@ -41,6 +41,11 @@
 
         img {
             height: 250px;
+
+            @media screen and (max-width: 992px){
+                height: auto;
+                width: 100%;
+            }
         }
     }
 
@@ -160,12 +165,6 @@
             position: absolute;
             background: linear-gradient(to bottom, rgb(var(--theme-bg)), rgb(255, 0, 0));
             backdrop-filter: blur(10px);
-
-            .container {
-                h1 {}
-
-                p {}
-            }
         }
 
         .container {
@@ -186,8 +185,6 @@
                     border: none;
                     outline: none;
                     padding: 0 15px;
-
-                    &.active {}
 
                     i {
                         font-size: 100px;
